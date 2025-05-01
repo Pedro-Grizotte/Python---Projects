@@ -23,8 +23,8 @@ if __name__ == '__main__':
     app.setWindowIcon(icon)
 
     # Info - Caso queira ter um historico da calculadora
-    # info = Info('2.0 ^ 10.0 = 1024')
-    # window.addWidgetToVLayout(info)
+    info = Info('')
+    window.addWidgetToVLayout(info)
 
     # Display
     display = Display()
@@ -32,7 +32,7 @@ if __name__ == '__main__':
     window.addWidgetToVLayout(display)
 
     # Grid
-    buttonsGrid = ButtonsGrid(display)
+    buttonsGrid = ButtonsGrid(display, info)
     window.vLayout.addLayout(buttonsGrid)
 
     # Executa o programa
